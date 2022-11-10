@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+  background-color: rgb(247, 219, 219);
+}
+.header{
+    padding:2rem 18%;
+    position: fixed;
+    text-decoration: none;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    text-transform: uppercase;
+    box-shadow: 0 1.5rem 1.5rem rgba(7, 7, 7, 0.649);
+    display: flex;
+    justify-content: space-between;
+    background: rgb(255, 233, 39);
+}
+.navbar{
+  align-items: center;
+  margin-left: 100px;
+}
+.header .navbar a{
+    padding: 14px;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 3.5rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    color: rgba(22, 23, 24, 0.815);
+    animation: forwards;
+    text-decoration: underline 2px rgb(255, 0, 0);
+}
+.home{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 5rem;
+}
+.home .content{
+    text-align: center;
+    flex:1 1 45rem;
+    color: rgb(3, 3, 3);
+    font-weight: bolder;
+    font-size:x-large;
+}
+.btn{
+    display: inline-block;
+    margin-top: 5px;
+    padding: 1px;
+    text-decoration: none;
+    padding-left: 20px;
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 1.5rem rgba(0, 0, 0, 0.822);
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.btn span{
+    padding:.7rem 1rem;
+    border-radius: 1rem;
+    background: rgb(255, 255, 255);
+    margin-left: .5rem;
+}
+
+.btn:hover{
+    background-color: rgb(0, 0, 0);
+    color:rgba(255, 255, 255, 0.504);
+}
+
+.btn:hover span{
+    color: rgb(255, 255, 255);
+    background:rgba(0, 0, 0, 0.936);
+}
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+}
+.box-container .card_item {
+    width: 30%;
+    margin-top: 35px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .box-container .card_inner {
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    height: 250px;
+    width: 390px;
+    background-image: linear-gradient(120deg, rgb(160, 143, 143), rgb(231, 228, 149), rgb(152, 139, 139));
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.597);
+  }
+  
+  .box-container.card_bottom {
+    padding: 15px;
+    text-align: center;
+    font-size: smaller;
+  }
+  
+  .box-container.card_bottom {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: antiquewhite;
+  }
+  
+  .box-container.card_bottom .card_info {
+    padding: 15px;
+    background-color: rgb(9, 9, 9);
+    margin: 10px 0;
+    border: 1px solid#000000;
+  }
+  
+  .box-container.card_bottom .card_info{
+    color: #eae3e3e3;
+    text-transform: uppercase;
+    font-size: 23px;
+    margin-bottom: 2px;
+    margin-top: -3px;
+  }
+  .box-container .card_bottom  {
+    text-align: center;
+  }
+  .box-container .card_top{
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+img{
+    border-radius: 50%;
+}
+.card_info{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h3{
+    font-size: larger;
+    font-weight: bolder;
+}
+.work-process .content{
+  text-align: center;
+  color: rgb(9, 9, 9);
+}
+.work-process .content h3{
+  font-family:'Times New Roman', Times, serif;
+}
+.work-process .content p{
+  font-size: large;
+}
+.box-container1{
+  display: grid;
+  gap: 1rem;
+  color: whitesmoke;
+  margin-left: 255px;
+  grid-template-columns: repeat(auto-fit, minmax(200px , 150px));
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.details .card_info{
+  background-image: linear-gradient(120deg, rgb(160, 143, 143), rgb(231, 228, 149), rgb(152, 139, 139));
+  border: 3px solid rgb(108, 125, 41);
+  border-radius: 25px;
+  box-shadow: 1rem 1rem 1rem rgba(156, 156, 60, 0.597);
+  height: 120px;
+  width: 150px;
+}
+.details .card_info h3{
+  color: black;
+}
+.details .card_info p{
+  color: black;
+}
+.creator{
+  display: inline;
+  float: inline-end;
+  position: absolute;
+}
+@media screen and (max-width: 1024px){
+	.box-container.card_item{
+		width: 33%;
+	}
+}
+
+@media screen and (max-width: 768px){
+	.box-container .card_item{
+		width: 50%;
+	}
+ .header{
+		font-size: 16px;
+		height: 60px;
+	}
+}
+
+@media screen and (max-width: 568px){
+	.box-container.card_item{
+		width: 100%;
+	}
+  .header{
+		font-size: 14px;
+	}
+}
